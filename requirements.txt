@@ -1,0 +1,5 @@
+# Use o comando "pip install -r requirements.txt" para instalar os requerimentos para esse virtualenv
+asgiref==3.4.1
+backports.zoneinfo==0.2.1
+-e git://github.com/django/django.git@afeafd6036616bac8263d762c1610f22241c0187#egg=Django
+sqlparse==0.4.2
