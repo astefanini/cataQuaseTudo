@@ -85,10 +85,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'db_cqt',
-        'USER': 'admin',
-        'PASSWORD': 'Kratius01',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'NAME': 'heroku_7ee4d4f4f123674',
+        'USER': 'ba479e2483ebe6',
+        'PASSWORD': '949c175b',
+        'HOST': 'us-cdbr-east-04.cleardb.com',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }

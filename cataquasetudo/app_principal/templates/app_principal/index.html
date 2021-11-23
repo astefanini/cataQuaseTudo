@@ -50,7 +50,7 @@
 
       <h1 class="logo me-auto"><a href="index.html">CataQuaseTudo</a></h1>
       <!-- Remova as marcações de comentários da linha abaixo para utilizar uma imagem como logotipo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="{% static 'app_principal/img/logo.png' %}" alt="" class="img-fluid"></a> -->
+      <!-- <a href="#" class="logo me-auto"><img src="{% static 'app_principal/img/logo.png' %}" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -218,7 +218,7 @@
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> O trabalho tem por eobjetivo a destinação dos resíduos específicos visando seu reaproveitamento <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> O trabalho tem por objetivo a destinação dos resíduos específicos visando seu reaproveitamento <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                       A solução CataQuaseTudo está em busca de pessoas ou empresas que utilizem os resíduos específicos de forma a reaproveitá-los como, por exemplo, na utilização de resíduos de alvenaria na pavimentação de passagens de pedestres ou de veículos ou que utilizem resíduos de jardinagem para compostagem ou trabalhos artesanais.
@@ -358,106 +358,99 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Nosso portfolio de serviços</h2>
+          <p>Veja abaixo o nosso portfolio de serviços de transporte e descarte de resíduos.</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter="*" class="filter-active">Tudo</li>
+          <li data-filter=".filter-jard">Jardinagem</li>
+          <li data-filter=".filter-const">Construção</li>
+          <li data-filter=".filter-eletro">Eletro...</li>
+          <li data-filter=".filter-moveis">Móveis</li>          
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-const">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/madeirademo.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <h4>Madeira de demolição</h4>
+              <p>Construção</p>
+              <a href="{% static 'app_principal/img/portfolio/madeirademo.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Madeira de demolição"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-jard">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/grama.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Aparas de grama</h4>
+              <p>Jardinagem</p>
+              <a href="{% static 'app_principal/img/portfolio/grama.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Aparas de grama"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-jard">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/poda.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Resíduos de poda</h4>
+              <p>Jardinagem</p>
+              <a href="{% static 'app_principal/img/portfolio/poda.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Resíduos de poda"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-jard">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/tronco.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Troncos</h4>
+              <p>Jardinagem</p>
+              <a href="{% static 'app_principal/img/portfolio/tronco.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Troncos"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-const">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/tijolo.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Reboco e tijolos</h4>
+              <p>Construção</p>
+              <a href="{% static 'app_principal/img/portfolio/tijolo.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Reboco e tijolos"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-const">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/piso.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Telhas, azulejos e pisos</h4>
+              <p>Construção</p>
+              <a href="{% static 'app_principal/img/portfolio/piso.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Telhas, azulejos e pisos"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-moveis">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/moveis.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Móveis velhos</h4>
+              <p>Móveis</p>
+              <a href="{% static 'app_principal/img/portfolio/moveis.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Móveis velhos"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eletro">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/fogao.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Fogões, geladeiras e máquinas de lavar</h4>
+              <p>Eletrodomésticos e eletroeletrônicos</p>
+              <a href="{% static 'app_principal/img/portfolio/fogao.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Fogões, geladeiras e máquinas de lavar"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-moveis">
+            <div class="portfolio-img"><img src="{% static 'app_principal/img/portfolio/tvs.jpeg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="{% static 'app_principal/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Aparelhos de som, TVs, computadores e outros.</h4>
+              <p>Eletrodomésticos e eletroeletrônicos</p>
+              <a href="{% static 'app_principal/img/portfolio/tvs.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Aparelhos de som, TVs, computadores e outros"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -471,24 +464,23 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Nosso time</h2>
+          <p>Nosso time é formado por alunos dos cursos de Ciência de dados, Sistemas da informação e Engenharia da computação. Veja a seguir.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="{% static 'app_principal/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Orlando Cesar Sandre</h4>
+                <span>Engenharia da Computação</span>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -496,16 +488,15 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="{% static 'app_principal/img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Marcia Ribeiro da Silva Oliveira</h4>
+                <span>Ciência de dados</span>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -513,16 +504,15 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="{% static 'app_principal/img/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Wellington Fernando Ferreira</h4>
+                <span>Sistemas de Informação</span>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -530,16 +520,63 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="{% static 'app_principal/img/team/team-4.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <h4>Vinicius Rafael de Lima Sandre</h4>
+                <span>Engenharia da computação</span>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alexandre André Stefanini</h4>
+                <span>Ciência de dados</span>
+                <div class="social">
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Cristiano Sales Neves</h4>
+                <span>Sistemas de informação</span>
+                <div class="social">
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ygor de Aguiar Camargo</h4>
+                <span>Sistemas de informação</span>
+                <div class="social">
+                  <a href="#team"><i class="ri-twitter-fill"></i></a>
+                  <a href="#team"><i class="ri-facebook-fill"></i></a>
+                  <a href="#team"><i class="ri-instagram-fill"></i></a>
+                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -555,54 +592,48 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Preços</h2>
+          <p>Abaixo, nossos preços. Nos reservamos o direito de alterá-los sem prévio aviso.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
+              <h3>Cadastrar-se e requisitar orçamentos como contratante</h3>
+              <h4><sup>R$</sup>0<span>Valor por orçamento requisitado o que inclui:</span></h4>
               <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bx bx-check"></i> Efetuar seu cadastro</li>
+                <li><i class="bx bx-check"></i> Pesquisar por serviços de transporte e destinação de resíduos</li>
+                <li><i class="bx bx-check"></i> Solicitar orçamentos</li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <a href="#pricing" class="buy-btn">Comece agora</a>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
+            <div class="box">
+              <h3>Cadastrar-se e oferecer serviços como contratado</h3>
+              <h4><sup>R$</sup>0<span>Divulgação dos serviços</span></h4>
               <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                <li><i class="bx bx-check"></i> Efetuar seu cadastro como pessoa física ou jurídica</li>
+                <li><i class="bx bx-check"></i> Cadastrar veículos para a oferta de serviços</li>
+                <li><i class="bx bx-check"></i> Informar o tipo de materiais que pode transportar e destinar</li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <a href="#pricing" class="buy-btn">Comece agora</a>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span>per month</span></h4>
+              <h3>Orçamentação e negociação de serviços pelo contratado (Em breve)</h3>
+              <h4><sup>R$</sup>25<span>Por contrato estabelecido</span></h4>
               <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                <li><i class="bx bx-check"></i> Visualizar os meios de contato do contratante</li>
+                <li><i class="bx bx-check"></i> Aceitar ou recusar propostas de serviços</li>
+                <li><i class="bx bx-check"></i> Contar com o suporte na utilização da solução</li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <a href="#pricing" class="buy-btn">Comece agora</a>
             </div>
           </div>
 
@@ -616,53 +647,36 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Perguntas frequentes</h2>
+          <p>Veja abaixo algumas das perguntas mais frequentes sobre o nosso modelo de negócio e as respostas a cada uma das perguntas. Clique sobre a pergunta para visualizar a resposta correspondente.</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"  data-bs-target="#faq-list-1" class="collapsed">A iniciativa CataQuaseTudo é uma empresa de transporte e destinação de resíduos? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  Não. A nossa iniciativa tem por objetivo conectar quem precisa descartar algum dos resíduos dentro da proposta da solução e uma pessoa que faz o transporte e a destinação correta do resíduo descartado.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">É possível assegurar que todo o resíduo recolhido será destinado corretamente? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  A destinação do resíduo é obtida através do acordo, no momento da contratação do transporte, entre quem precisa destinar resíduos e o transportador. Uma das partes deve assumir a responsabilidade pela destinação do resíduo em questão. Quaisquer penalidades pelo descarte incorreto podem ser aplicadas, pelas autoridades competentes, tanto a quem precisa descartar como a quem efetua o transporte e o descarte em si conforme as leis do país que regulam essa atividade.
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">A intermediação da negociação e pagamento são feitos pela solução CataQuaseTudo? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  Não. A solução tem por objetivo ser apenas um concentrador, um hub, onde aqueles que tem necessidade e aqueles que se dispõe a atendê-la podem se encontrar, efetuar o primeiro contato e, se desejarem, prosseguir com a negociação e contratação dos serviços propostos sem qualquer interferência da solução CataQuaseTudo.
                 </p>
               </div>
             </li>
@@ -673,94 +687,10 @@
       </div>
     </section><!-- Fim da seção Questões frequentes -->
 
-    <!-- ======= Seção Contatos ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- Fim da seção Contatos -->
-
   </main><!-- Fim de #main -->
 
   <!-- ======= Rodapé ======= -->
   <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer-top">
       <div class="container">
@@ -769,46 +699,42 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>CataQuaseTudo</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Cerquilho-SP <br>
+              Brasil <br><br>
+              <strong>Telefone:</strong> Em breve <br>
+              <strong>Email:</strong> Em Breve<br>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links principais</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Início</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre nós</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#cta">Serviços</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#pricing">Preços</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#faq">Perguntas frequentes</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Nossas redes sociais</h4>
+            <p>Em breve, links para nossas redes sociais.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="#footer" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#footer" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#footer" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#footer" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#footer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>O meio ambiente agradece!</h4>
+            <ul>
+              <a href="#" class="logo me-auto"><img src="{% static 'app_principal/img/logo.png' %}" alt="" class="img-fluid"></a>
+            </ul>
           </div>
 
         </div>
@@ -823,6 +749,9 @@
         Desenvolvido pelos alunos da Univesp, Polo de Cerquilho do oitavo bimestre do Eixo Computação. <a href="https://univesp.br/">Univesp</a>
       </div>
     </div>
+
+
+    
   </footer><!-- Fim do Rodapé -->
 
   <div id="preloader"></div>
