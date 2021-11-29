@@ -1,0 +1,273 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>CataQuaseTudo - Soluções ecológicas em transporte e destinação de resíduos não lixo comum, nem recicláveis
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Definição dos favicons -->
+    <link href="{% static 'app_principal/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'app_principal/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fontes do Google-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Bibliotecas CSS de terceiros -->
+    <link href="{% static 'app_principal/js/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'app_principal/js/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Arquivo CSS principal -->
+    <link href="{% static 'app_principal/css/style.css' %}" rel="stylesheet">
+
+    <!-- =======================================================
+     * CataQuaseTudo
+     * 
+     * Autores: Alexandre André Stefanini, Marcia Cristina Ribeiro da Silva Oliveira, 
+     * Cristiano Sales Neves, Orlando Cesar Sandre, Ygor de Aguiar camargo,
+     * Wellington Fernando Ferreira, Vinicius Rafael de Lima Sandre
+     * Versão: 1.0
+     * Data da última versão: 17/11/2021
+     */  
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Cabeçalho ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="/">CataQuaseTudo</a></h1>
+            <!--
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav> --> <!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Seção hero ======= -->
+        
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <!--
+                    <h1>Soluções ecológicas em transporte e destinação de resíduos não lixo comum, nem recicláveis</h1>
+                    <h2>Nós conectamos você às pessoas que transportam e destinam corretamente resíduos não lixo comum, nem recicláveis. </h2> 
+                    -->
+                    <h1>Cadastro de Transportes</h1>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="/" class="btn-get-started scrollto">Voltar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="{% static 'app_principal/img/hero-img2.png' %}" class="img-fluid animated" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section> <!-- Fim da seção Hero -->
+
+    <!--Início do formulário-->
+    <div class="container">
+        <div class="py-4 text-center">
+          <p class="lead">Insira seus dados abaixo para prestar serviços com o cadastro de veículos.</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4 order-md-2 mb-4">
+  
+          </div>
+          <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate method="post">
+              
+              {% csrf_token %}
+
+              <div class="row">
+
+                  <div class="col-md-3 mb-3">
+                    <label for="{{ form.prestador.id_for_label }}">Seu código</label>
+                    <input type="text" name="prestador" class="form-control" id="{{ form.prestador.auto_id }}" placeholder="" value="15" required readonly>
+                    <div class="invalid-feedback">
+                      É preciso ter definido um prestador. Volte a tela de login.
+                    </div>
+                  </div>
+                <div class="col-md-8 mb-3">
+                  <label for="{{ form.veiculo.id_for_label }}">Veículo</label>
+                  <input type="text" name="veiculo" class="form-control" id="{{ form.veiculo.auto_id }}" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    É preciso digitar um veículo.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="{{ form.capacidade.id_for_label }}">Capacidade em ton.</label>
+                  <input type="text" name="capacidade" class="form-control" id="{{ form.capacidade.auto_id }}" step="1" placeholder="1" value="1" required>
+                  <div class="invalid-feedback">
+                    Digite um valor para capacidade em toneladas.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="{{ form.preco.id_for_label }}">Preço por viagem</label>
+                    <input type="number" name="preco" class="form-control" id="{{ form.preco.auto_id }}" step="10" placeholder="0.00" value="0.00" required>
+                    <div class="invalid-feedback">
+                      Digite um valor para o preço por viagem.
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+              <h3>O que você pode transportar?</h3>
+              </div>
+              
+              <div class="row">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="moveis" type="checkbox" id="{{ form.moveis.auto_id }}">
+                    <label class="form-check-label" for="{{ form.moveis.id_for_label }}">Móveis velhos e deteriorados</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="eletro" type="checkbox" id="{{ form.eletro.auto_id }}">
+                    <label class="form-check-label" for="{{ form.eletro.id_for_label }}">Eletrodomésticos e eletroeletrônicos</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="metais" type="checkbox" id="{{ form.metais.auto_id }}">
+                    <label class="form-check-label" for="{{ form.metais.id_for_label }}">Ferragens e outros metais</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="alvenaria" type="checkbox" id="{{ form.alvenaria.auto_id }}">
+                    <label class="form-check-label" for="{{ form.alvenaria.id_for_label }}">Tijolos, telhas, azulejos, pisos, reboco e concreto</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="madeiramento" type="checkbox" id="{{ form.madeiramento.auto_id }}">
+                    <label class="form-check-label" for="{{ form.madeiramento.id_for_label }}">Madeiramento ou madeira de demolição</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="troncos" type="checkbox" id="{{ form.troncos.auto_id }}">
+                    <label class="form-check-label" for="{{ form.troncos.id_for_label }}">Troncos resultantes do corte de árvores</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="arbustos" type="checkbox" id="{{ form.arbustos.auto_id }}">
+                    <label class="form-check-label" for="{{ form.arbustos.id_for_label }}">Galhos de arbustos resultantes de podas</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="grama" type="checkbox" id="{{ form.grama.auto_id }}">
+                    <label class="form-check-label" for="{{ form.grama.id_for_label }}">Aparas resultantes do corte de grama</label>
+                </div>
+              </div>
+
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+  
+      </div>
+
+  <!-- ======= Rodapé ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>CataQuaseTudo</h3>
+            <p>
+              Cerquilho-SP <br>
+              Brasil <br><br>
+              <strong>Telefone:</strong> Em breve <br>
+              <strong>Email:</strong> Em Breve<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nossas redes sociais</h4>
+            <p>Em breve, links para nossas redes sociais.</p>
+            <div class="social-links mt-3">
+              <a href="#footer" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#footer" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#footer" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#footer" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#footer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>O meio ambiente agradece!</h4>
+            <ul>
+              <a href="#" class="logo me-auto"><img src="{% static 'app_principal/img/logo.png' %}" alt="" class="img-fluid"></a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CataQuaseTudo</span></strong>. Todos os direitos reservados
+      </div>
+      <div class="credits">
+        Desenvolvido pelos alunos da Univesp, Polo de Cerquilho do oitavo bimestre do Eixo Computação. <a href="https://univesp.br/">Univesp</a>
+      </div>
+    </div>
+
+  </footer><!-- Fim do Rodapé -->
+    
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Arquivos Javascript de terceiros -->
+    <script src="{% static 'app_principal/js/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'app_principal/js/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+    <!-- Principal arquivo Javascript -->
+    <script src="{% static 'app_principal/js/main.js' %}"></script>
+
+
+</body>
+
+</html>
