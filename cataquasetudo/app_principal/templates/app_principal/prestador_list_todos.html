@@ -77,6 +77,8 @@
         </div>
     </section> <!-- Fim da seção Hero -->
 
+    {% csrf_token %}
+
     {% if prestador_list|length > 0 %}
     <div class="table-responsive">
         <table class="table">

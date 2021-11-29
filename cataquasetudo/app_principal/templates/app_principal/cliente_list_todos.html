@@ -77,8 +77,8 @@
             </div>
         </div>
     </section> <!-- Fim da seção Hero -->
-    
-    <div>{{id_usuario}} {{id_senha}}</div>
+
+    {% csrf_token %}
 
     {% if cliente_list|length > 0 %}
 
