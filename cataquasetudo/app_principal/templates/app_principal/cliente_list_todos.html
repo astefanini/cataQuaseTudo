@@ -108,6 +108,16 @@
                     <td> {{ clientes.cidade }} </td>
                     <td> {{ clientes.estado }} </td>
                     <td> {{ clientes.cep }} </td>
+                    <td>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="contrato_cliente_list/{{ clientes.codigo }}" class="btn-get-started scrollto">Ver contratos</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="transporte_list_todos/{{ clientes.codigo }}" class="btn-get-started scrollto">Cadastrar contrato</a>
+                        </div>
+                    </td>                        
                 </tr>
                 {% endfor %}
             </tbody>

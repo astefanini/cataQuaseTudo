@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                     data-aos="fade-up" data-aos-delay="200">
-                    <h1>Lista de Prestadores</h1>
+                    <h1>Lista de Transportadores</h1>
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <a href="/" class="btn-get-started scrollto">Voltar</a>
                     </div>
@@ -79,7 +79,7 @@
 
     {% csrf_token %}
 
-    {% if prestador_list|length > 0 %}
+    {% if prestador_list_todos|length > 0 %}
     <div class="table-responsive">
         <table class="table">
             <tbody>
@@ -96,7 +96,7 @@
                     </tr>
                 </thead>
 
-                {% for prestadores in prestador_list %}
+                {% for prestadores in prestador_list_todos %}
                 <tr>
                     <td> {{ prestadores.codigo }} </td>
                     <td> {{ prestadores.nome }} </td>
@@ -106,6 +106,16 @@
                     <td> {{ prestadores.cidade }} </td>
                     <td> {{ prestadores.estado }} </td>
                     <td> {{ prestadores.cep }} </td>
+                    <td>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="transporte_create/{{ prestadores.codigo }}" class="btn-get-started scrollto">Novo veículo</a>
+                        </div>
+                    </td>                        
+                    <td>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="transporte_list/{{ prestadores.codigo }}" class="btn-get-started scrollto">Ver veículos</a>
+                        </div>
+                    </td>                        
                 </tr>
                 {% endfor %}
             </tbody>
@@ -116,7 +126,7 @@
     
     <br>
     <br>
-    <center><h4>O cliente não existe!</h4></center>
+    <center><h4>Não existem transportadores!</h4></center>
     
     {% endif %}
 

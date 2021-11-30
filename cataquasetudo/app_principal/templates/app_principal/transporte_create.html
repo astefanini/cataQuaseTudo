@@ -124,29 +124,29 @@
               <div class="row">
 
                   <div class="col-md-3 mb-3">
-                    <label for="{{ form.prestador.id_for_label }}">Seu código</label>
-                    <input type="text" name="prestador" class="form-control" id="{{ form.prestador.auto_id }}" placeholder="" value="15" required readonly>
+                    <label for="{{ prestador.id_for_label }}">Seu código</label>
+                    <input type="text" name="prestador" class="form-control" id="{{ prestador.auto_id }}" placeholder="" value="{{id_prestador}}" required readonly>
                     <div class="invalid-feedback">
                       É preciso ter definido um prestador. Volte a tela de login.
                     </div>
                   </div>
                 <div class="col-md-8 mb-3">
-                  <label for="{{ form.veiculo.id_for_label }}">Veículo</label>
-                  <input type="text" name="veiculo" class="form-control" id="{{ form.veiculo.auto_id }}" placeholder="" value="" required>
+                  <label for="{{ veiculo.id_for_label }}">Veículo</label>
+                  <input type="text" name="veiculo" class="form-control" id="{{ veiculo.auto_id }}" placeholder="" value="" required>
                   <div class="invalid-feedback">
                     É preciso digitar um veículo.
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                  <label for="{{ form.capacidade.id_for_label }}">Capacidade em ton.</label>
-                  <input type="text" name="capacidade" class="form-control" id="{{ form.capacidade.auto_id }}" step="1" placeholder="1" value="1" required>
+                  <label for="{{ capacidade.id_for_label }}">Capacidade em ton.</label>
+                  <input type="text" name="capacidade" class="form-control" id="{{ capacidade.auto_id }}" step="1" placeholder="1" value="1" required>
                   <div class="invalid-feedback">
                     Digite um valor para capacidade em toneladas.
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <label for="{{ form.preco.id_for_label }}">Preço por viagem</label>
-                    <input type="number" name="preco" class="form-control" id="{{ form.preco.auto_id }}" step="10" placeholder="0.00" value="0.00" required>
+                    <label for="{{ preco.id_for_label }}">Preço por viagem</label>
+                    <input type="number" name="preco" class="form-control" id="{{ preco.auto_id }}" step="10" placeholder="0.00" value="0.00" required>
                     <div class="invalid-feedback">
                       Digite um valor para o preço por viagem.
                     </div>
@@ -159,36 +159,36 @@
               
               <div class="row">
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="moveis" type="checkbox" id="{{ form.moveis.auto_id }}">
-                    <label class="form-check-label" for="{{ form.moveis.id_for_label }}">Móveis velhos e deteriorados</label>
+                    <input class="form-check-input" name="moveis" type="checkbox" id="{{ moveis.auto_id }}">
+                    <label class="form-check-label" for="{{ moveis.id_for_label }}">Móveis velhos e deteriorados</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="eletro" type="checkbox" id="{{ form.eletro.auto_id }}">
-                    <label class="form-check-label" for="{{ form.eletro.id_for_label }}">Eletrodomésticos e eletroeletrônicos</label>
+                    <input class="form-check-input" name="eletro" type="checkbox" id="{{ eletro.auto_id }}">
+                    <label class="form-check-label" for="{{ eletro.id_for_label }}">Eletrodomésticos e eletroeletrônicos</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="metais" type="checkbox" id="{{ form.metais.auto_id }}">
-                    <label class="form-check-label" for="{{ form.metais.id_for_label }}">Ferragens e outros metais</label>
+                    <input class="form-check-input" name="metais" type="checkbox" id="{{ metais.auto_id }}">
+                    <label class="form-check-label" for="{{ metais.id_for_label }}">Ferragens e outros metais</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="alvenaria" type="checkbox" id="{{ form.alvenaria.auto_id }}">
-                    <label class="form-check-label" for="{{ form.alvenaria.id_for_label }}">Tijolos, telhas, azulejos, pisos, reboco e concreto</label>
+                    <input class="form-check-input" name="alvenaria" type="checkbox" id="{{ alvenaria.auto_id }}">
+                    <label class="form-check-label" for="{{ alvenaria.id_for_label }}">Tijolos, telhas, azulejos, pisos, reboco e concreto</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="madeiramento" type="checkbox" id="{{ form.madeiramento.auto_id }}">
-                    <label class="form-check-label" for="{{ form.madeiramento.id_for_label }}">Madeiramento ou madeira de demolição</label>
+                    <input class="form-check-input" name="madeiramento" type="checkbox" id="{{ madeiramento.auto_id }}">
+                    <label class="form-check-label" for="{{ madeiramento.id_for_label }}">Madeiramento ou madeira de demolição</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="troncos" type="checkbox" id="{{ form.troncos.auto_id }}">
-                    <label class="form-check-label" for="{{ form.troncos.id_for_label }}">Troncos resultantes do corte de árvores</label>
+                    <input class="form-check-input" name="troncos" type="checkbox" id="{{ troncos.auto_id }}">
+                    <label class="form-check-label" for="{{ troncos.id_for_label }}">Troncos resultantes do corte de árvores</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="arbustos" type="checkbox" id="{{ form.arbustos.auto_id }}">
-                    <label class="form-check-label" for="{{ form.arbustos.id_for_label }}">Galhos de arbustos resultantes de podas</label>
+                    <input class="form-check-input" name="arbustos" type="checkbox" id="{{ arbustos.auto_id }}">
+                    <label class="form-check-label" for="{{ arbustos.id_for_label }}">Galhos de arbustos resultantes de podas</label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" name="grama" type="checkbox" id="{{ form.grama.auto_id }}">
-                    <label class="form-check-label" for="{{ form.grama.id_for_label }}">Aparas resultantes do corte de grama</label>
+                    <input class="form-check-input" name="grama" type="checkbox" id="{{ grama.auto_id }}">
+                    <label class="form-check-label" for="{{ grama.id_for_label }}">Aparas resultantes do corte de grama</label>
                 </div>
               </div>
 

@@ -65,9 +65,9 @@
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                     data-aos="fade-up" data-aos-delay="200">
-                    <h1>Lista de Clientes</h1>
+                    <h1>Lista de contratos efetuados</h1>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="/" class="btn-get-started scrollto">Voltar</a>
+                        <a href="/cliente_list_todos" class="btn-get-started scrollto">Voltar</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -78,34 +78,41 @@
         </div>
     </section> <!-- Fim da seção Hero -->
     
-    {% if cliente_list|length > 0 %}
+    {% if contrato_cliente_list|length > 0 %}
 
     <div class="table-responsive">
         <table class="table">
             <tbody>
                 <thead>
                     <tr>
-                        <td> Código </td>
-                        <td> Nome </td>
-                        <td> Logradouro </td>
-                        <td> Número </td>
-                        <td> Bairro </td>
-                        <td> Cidade </td>
-                        <td> Estado </td>
-                        <td> CEP </td>
+                        <td> Quantidade em sacos </td>
+                        <td> Moveis </td>
+                        <td> Eletro... </td>
+                        <td> Metais </td>
+                        <td> Alvenaria </td>
+                        <td> Madeiramento </td>
+                        <td> Troncos </td>
+                        <td> Arbustos </td>
+                        <td> Grama </td>
                     </tr>
                 </thead>
 
-                {% for clientes in cliente_list %}
+                {% for contrato_cliente in contrato_cliente_list %}
                 <tr>
-                    <td> {{ clientes.codigo }} </td>
-                    <td> {{ clientes.nome }} </td>
-                    <td> {{ clientes.logradouro }} </td>
-                    <td> {{ clientes.numero }} </td>
-                    <td> {{ clientes.bairro }} </td>
-                    <td> {{ clientes.cidade }} </td>
-                    <td> {{ clientes.estado }} </td>
-                    <td> {{ clientes.cep }} </td>
+                    <td> {{ contrato_cliente.quantidade }} </td>
+                    <td> {% if contrato_cliente.moveis %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.eletro %}Sim{% else %}Não{% endif %} </td>                    
+                    <td> {% if contrato_cliente.metais %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.alvenaria %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.madeiramento %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.troncos %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.arbusto %}Sim{% else %}Não{% endif %} </td>
+                    <td> {% if contrato_cliente.grama %}Sim{% else %}Não{% endif %} </td>
+                    <td>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="/contrato_transporte_list/{{ contrato_cliente.transporte_id }}" class="btn-get-started scrollto">Ver veículo</a>
+                        </div>
+                    </td>                        
                 </tr>
                 {% endfor %}
             </tbody>
@@ -116,7 +123,7 @@
     
     <br>
     <br>
-    <center><h4>O cliente não existe!</h4></center>
+    <center><h4>Não há contratos efetuados!</h4></center>
     
     {% endif %}
 
