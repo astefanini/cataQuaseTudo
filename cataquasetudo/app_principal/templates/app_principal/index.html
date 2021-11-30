@@ -1,5 +1,7 @@
 {% load static %}
 
+{% csrf_token %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,38 +50,37 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">CataQuaseTudo</a></h1>
+      <h1 class="logo me-auto"><a href="/">CataQuaseTudo</a></h1>
       <!-- Remova as marcações de comentários da linha abaixo para utilizar uma imagem como logotipo -->
       <!-- <a href="#" class="logo me-auto"><img src="{% static 'app_principal/img/logo.png' %}" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
+          
           <li><a class="nav-link scrollto active" href="#hero">Início</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
           <li><a class="nav-link scrollto" href="#services">Serviços</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">O time</a></li>
           
-          <!-- Remova as marcações de comentários abaixo para criar uma opção de menu com submenus -->
-          <!--
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- Menus de cadastros e consultas-->
+          <li class="dropdown"><a href="#"><span>Cadastros</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="#"><span>Clientes</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="/cliente_create">Novo cliente</a></li>
+                  <li><a href="/cliente_list_todos">Lista completa de clientes</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li class="dropdown"><a href="#"><span>Transportadores</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/prestador_create">Novo transportador</a></li>
+                  <li><a href="/prestador_list_todos">Lista completa de transportadores</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
-          -->
+          
           
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
           <li><a class="getstarted scrollto" href="#about">Comece nos conhecendo</a></li>
@@ -378,7 +379,6 @@
               <h4>Madeira de demolição</h4>
               <p>Construção</p>
               <a href="{% static 'app_principal/img/portfolio/madeirademo.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Madeira de demolição"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -555,22 +555,6 @@
               <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Cristiano Sales Neves</h4>
-                <span>Sistemas de informação</span>
-                <div class="social">
-                  <a href="#team"><i class="ri-twitter-fill"></i></a>
-                  <a href="#team"><i class="ri-facebook-fill"></i></a>
-                  <a href="#team"><i class="ri-instagram-fill"></i></a>
-                  <a href="#team"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="{% static 'app_principal/img/team/none.jpeg' %}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ygor de Aguiar Camargo</h4>
                 <span>Sistemas de informação</span>
                 <div class="social">
                   <a href="#team"><i class="ri-twitter-fill"></i></a>

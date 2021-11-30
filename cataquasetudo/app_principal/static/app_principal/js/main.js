@@ -7,6 +7,7 @@
 * Versão: 1.0
 * Data da última versão: 17/11/2021
 */
+
 (function() {
     "use strict";
   
